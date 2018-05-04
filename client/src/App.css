@@ -29,4 +29,16 @@
 
 .link {
   list-style-type: none;
+  color:#5ed3f3;
+}
+
+
+ul {
+  border: 1px solid gray;
+  width: 70%;
+  margin: 10px auto;
+  background-color:#232322;
+  color:#5fd5f5;
+  font-size: 22px;
+
 }

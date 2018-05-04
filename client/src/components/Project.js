@@ -15,9 +15,9 @@ export default class Project extends Component {
     axios.get('http://localhost:5000/projects/')
 
     .then(response => {
-      console.log('from cdm ...', response.data)
+      // console.log('from cdm ...', response.data)
       this.setState({projects: response.data})
-      console.log('after setstate...', this.state.projects)
+      // console.log('after setstate...', this.state.projects)
     })
     .catch(err => console.log(err))
   }
@@ -28,7 +28,7 @@ export default class Project extends Component {
             {this.state.projects.map(project => {
               return(
             <ul>
-              <Link to={`/project/${project.id}`}>
+              <Link to={`/projects/${project.id}`}>
               <li className="link">{project.name}</li>
               </Link>
               <li className="link">{project.description}</li>

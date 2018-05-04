@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 
-class Project extends Component {
+export default class Project extends Component {
   constructor(){
     super()
     this.state = {

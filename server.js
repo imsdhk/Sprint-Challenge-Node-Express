@@ -16,6 +16,7 @@ app.use(cors());
 app.get('/', (req,res) => res.send('root route..running'))
 
 app.use('/projects', projectRouter);
+app.use('/list/:id', projectRouter);
 app.use('/actions', actionRouter);
 
 
